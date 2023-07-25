@@ -1,3 +1,6 @@
+# About this fork
+Chinese comments in source codes have been translated into English and put on 'english_translation' branch.
+
 # S-FAST_LIO
 ## Simplified Implementation of FAST_LIO
 
