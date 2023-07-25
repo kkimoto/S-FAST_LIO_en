@@ -964,14 +964,14 @@ void Preprocess::rs_handler(const sensor_msgs::PointCloud2_<allocator<void>>::Co
   else
   {
     given_offset_time = false;
-    double yaw_first = atan2(pl_orig.points[0].y, pl_orig.points[0].x) * 57.29578; // 记录第一个点(index 0)的yaw， to degree
+    double yaw_first = atan2(pl_orig.points[0].y, pl_orig.points[0].x) * 57.29578; // Record the yaw of the first point (index 0) to degree
     double yaw_end = yaw_first;
-    int layer_first = pl_orig.points[0].ring; // 第一个点(index 0)的layer序号
-    for (uint i = plsize - 1; i > 0; i--)     // 倒序遍历，找到与第一个点相同layer的最后一个点
+    int layer_first = pl_orig.points[0].ring; // the layer number of the first point (index 0)
+    for (uint i = plsize - 1; i > 0; i--) // Iterate in reverse order to find the last point in the same layer as the first point.
     {
       if (pl_orig.points[i].ring == layer_first)
       {
-        yaw_end = atan2(pl_orig.points[i].y, pl_orig.points[i].x) * 57.29578; // 与第一个点相同layer的最后一个点的yaw
+        yaw_end = atan2(pl_orig.points[i].y, pl_orig.points[i].x) * 57.29578; // yaw of the last point of the same layer as the first point
         break;
       }
     }
