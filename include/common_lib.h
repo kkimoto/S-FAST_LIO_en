@@ -81,7 +81,7 @@ bool esti_plane(Matrix<T, 4, 1> &pca_result, const PointVector &point, const T &
     b.setOnes();
     b *= -1.0f;
 
-    // Find the parameter A/Dx + B/Dy + C/Dz + 1 = 0.
+    //Find the parameter A/Dx + B/Dy + C/Dz + 1 = 0
     for (int j = 0; j < NUM_MATCH_POINTS; j++)
     {
         A(j,0) = point[j].x;
