@@ -6,7 +6,7 @@
 	<rosparam command="load" file="$(find sfast_lio)/config/rslidar.yaml" />
 
 	<param name="feature_extract_enable" type="bool" value="0"/>
-	<! -- 100HZ bag point_filter_num is recommended to be set to 1; 10HZ bag is recommended to be set to 2 or 3 -->
+	<!-- For a 100 HZ bag point_filter_num is recommended to be set to 1; for a 10 HZ bag it is recommended to be set to 2 or 3 -->
 	<param name="point_filter_num" type="int" value="2"/>               
 	<param name="max_iteration" type="int" value="4" />
 	<param name="filter_size_surf" type="double" value="0.5" />
