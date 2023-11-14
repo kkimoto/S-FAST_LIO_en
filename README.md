@@ -1,5 +1,7 @@
 # S-FAST_LIO
 ## Simplified Implementation of FAST_LIO
+## Refined FAST_LIO code by zlwang7 has useful comments those are written in Chinese.
+## For non-Chinese people (like me) comments were translated into English using deepL.
 
 S-FAST_LIO is a simplified implementation of FAST_LIO (Xu, Wei, et al. "Fast-lio2: Fast direct lidar-inertial odometry."), which is modified from [FAST_LIO](https://github.com/hku-mars/FAST_LIO). This code is clean and accessible. It is a reference material for SLAM beginners.The main modifications are as follows:
 * The [Sophus](https://github.com/strasdat/Sophus) is used to define the state variables, instead of the complicated [IKFOM](https://github.com/hku-mars/IKFoM)
